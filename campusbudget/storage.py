@@ -97,4 +97,3 @@ def get_budget(conn: sqlite3.Connection, month: str) -> Budget | None:
 
 def months(conn: sqlite3.Connection) -> list[str]:
     return [r[0] for r in conn.execute("SELECT substr(t_time,1,7) AS month FROM entries UNION SELECT month FROM budgets ORDER BY month DESC")]
-

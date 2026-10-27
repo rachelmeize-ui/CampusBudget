@@ -189,4 +189,3 @@ def parse_entry(text: str, now: datetime) -> dict:
     category = next((cat for cat, keys in CATEGORY_KEYWORDS if any(k in lowered for k in keys)), "其他")
     fixed = kind == "expense" and any(x in lowered for x in ["房租", "月租", "水费", "电费", "网费", "会员", "订阅", "vip"])
     return dict(t_type=kind, amount=amount, t_time=entry_time, category=category, note=raw, is_fixed=fixed)
-

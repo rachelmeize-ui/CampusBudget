@@ -55,4 +55,3 @@ def test_demo_and_personal_connections_are_isolated(tmp_path):
     storage.add_entry(demo,**sample())
     assert len(storage.list_entries(personal))==0
     demo.close();personal.close()
-

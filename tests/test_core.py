@@ -79,4 +79,3 @@ def test_mad_flags_outlier_and_handles_zero_mad():
 
 def test_small_categories_do_not_generate_confident_alerts():
     assert detect_anomalies(frame([15,2000])).empty
-

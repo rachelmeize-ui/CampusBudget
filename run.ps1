@@ -8,4 +8,3 @@ if (-not (Test-Path -LiteralPath $taskPython)) {
 & $taskPython -m pip install -r requirements.txt
 if ($LASTEXITCODE -ne 0) { throw '依赖安装失败，请检查网络后重试。' }
 & $taskPython -m streamlit run app.py
-

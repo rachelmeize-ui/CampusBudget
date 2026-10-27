@@ -15,4 +15,3 @@ jobs:
       - run: python -m pytest -q
         env:
           CAMPUSBUDGET_PUBLIC_DEMO: '1'
-

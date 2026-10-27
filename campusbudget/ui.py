@@ -91,4 +91,3 @@ def ledger_table(frame, limit=None):
     show['备注']=show['note'].fillna('')
     show['固定支出']=show['is_fixed'].map({0:'否',1:'是'})
     st.dataframe(show[['日期','类型','分类','金额','备注','固定支出']],hide_index=True,use_container_width=True,column_config={'金额':st.column_config.NumberColumn('金额 / 元',format='%.2f'),'备注':st.column_config.TextColumn('备注',width='large')})
-

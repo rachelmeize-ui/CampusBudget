@@ -230,4 +230,3 @@ def ledger(conn,month,today,navigate,is_demo):
                 st.rerun()
     st.write('')
     ui.insight('数据属于你','演示账本仅保留在当前浏览器会话对应的内存里；本地账本保存在当前电脑的数据文件中。建议定期导出备份。',icon='↙')
-

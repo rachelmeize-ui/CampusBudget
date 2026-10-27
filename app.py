@@ -75,4 +75,3 @@ if flash:
 dispatch={'总览看板':views.dashboard,'记一笔':views.entry,'消费分析':views.analytics,'预算管理':views.budget,'账本管理':views.ledger}
 dispatch[nav](conn,month,today,navigate,is_demo)
 st.markdown('<div class="footer-note"><span>CampusBudget · 让日常预算更清楚</span><span>'+('当前为模拟数据，可放心体验' if is_demo else '个人账本保存在当前设备')+'</span></div>',unsafe_allow_html=True)
-

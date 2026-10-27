@@ -23,4 +23,3 @@ def test_all_views_render_and_parser_requires_confirmation(monkeypatch):
     next(b for b in app.button if b.label=='确认并保存').click().run()
     assert not app.exception
     assert app.session_state['_demo_connection'].execute('SELECT count(*) FROM entries').fetchone()[0]==before+1
-

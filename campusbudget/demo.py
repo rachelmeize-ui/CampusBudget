@@ -38,4 +38,3 @@ def seed_demo(conn, today: date):
             storage.add_entry(conn,t_type="expense",amount=188,t_time=datetime(start.year,start.month,min(last,19),19),category="餐饮",note="演示 · 和朋友聚餐（观察提醒）",is_fixed=False)
         if last>=15:
             storage.add_entry(conn,t_type="income",amount=350,t_time=datetime(start.year,start.month,15,18),category="其他",note="演示 · 兼职收入",is_fixed=False)
-

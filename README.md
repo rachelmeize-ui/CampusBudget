@@ -110,4 +110,3 @@ scripts/browser_check.cjs # 可选的浏览器验收脚本
 - [架构与边界](docs/architecture.md)
 - [迭代记录](docs/CHANGELOG.md)
 - [AI 协作说明](docs/ai-collaboration.md)
-
